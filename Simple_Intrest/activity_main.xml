@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:background="@color/red"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="@string/si"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/enter_amount"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-black"
+            android:textStyle="italic"/>
+
+        <EditText
+            android:id="@+id/amt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autofillHints=""
+            android:ems="7"
+            android:text="0"
+            android:inputType="number"
+            android:textColorHint="#757575"
+            tools:ignore="@string/Amount,TouchTargetSizeCheck" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/enter_rate"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-black"
+            android:textStyle="italic"/>
+
+        <EditText
+            android:id="@+id/rate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autofillHints=""
+            android:ems="7"
+            android:text="0"
+            android:inputType="number"
+            android:textColorHint="#757575"
+            tools:ignore="@string/Rate,TouchTargetSizeCheck" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/enter_year"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-black"
+            android:textStyle="italic"/>
+
+        <EditText
+            android:id="@+id/year"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autofillHints=""
+            android:ems="7"
+            android:text="0"
+            android:inputType="number"
+            android:textColorHint="#757575"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:paddingTop="20dp"
+        android:foregroundTint="@color/red"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btncal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:text="Calculate"
+            android:textSize="15sp"
+            android:textStyle="italic"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/simple_interest"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-black"
+            android:textStyle="italic"/>
+
+        <EditText
+            android:id="@+id/si"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autofillHints=""
+            android:editable="false"
+            android:ems="7"
+            android:inputType="number"
+            android:textColorHint="#757575"
+            tools:ignore="@string/si,Deprecated,TouchTargetSizeCheck" />
+    </LinearLayout>
+
+</LinearLayout>
