@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/lightpink"
+            android:fontFamily="serif"
+            android:gravity="center" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="meesho"
+            android:textSize="40sp"
+            android:textColor="@color/pink"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@color/white"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:id="@+id/meesho_jobs"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Meesho-Jobs"
+                android:textSize="20sp"
+                android:textColor="@color/blue"
+                android:fontFamily="serif"
+                android:gravity="center" />
+            <TextView
+                android:id="@+id/meesho_career"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Meesho-Career"
+                android:textSize="20sp"
+                android:textColor="@color/blue"
+                android:fontFamily="serif"
+                android:gravity="center" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:id="@+id/home"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Meesho-Home_Page"
+                android:textSize="20sp"
+                android:textColor="@color/blue"
+                android:fontFamily="serif"
+                android:gravity="center" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="70dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Choice "
+                android:textSize="40sp"
+                android:textColor="@color/pink"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:background="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text=">> Enter Url Of Any Website :-"
+                android:textSize="20sp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="serif"
+                android:gravity="center"/>
+            <EditText
+                android:id="@+id/edurl"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"/>
+            <Button
+                android:id="@+id/btn_url"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Click"
+                android:fontFamily="sans-serif-thin"
+                android:textStyle="bold|italic"
+                android:backgroundTint="@color/pink"
+                android:textSize="20sp"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
